@@ -3,7 +3,6 @@ let productBtn = document.getElementById('product-submit-btn');
 let addBtn = document.getElementById('add-input-btn');
 let remBtn = document.getElementById('delete-number-input');
 
-// function for click event when button "calculate sum" is pushed.
 function sumClick(event) 
 {
     let resultSum = document.getElementById('sum-result-container');
@@ -15,7 +14,6 @@ function sumClick(event)
 }
 sumBtn.addEventListener('click', sumClick);
 
-// function for click event when button "calculate product" is pushed.
 function prodClick(event) 
 {
     let resultProd = document.getElementById('product-result-container');
@@ -27,7 +25,6 @@ function prodClick(event)
 }
 productBtn.addEventListener('click', prodClick);
 
-// Function to add a new field to the calculator.
 function addInput(event)
 {
     let extraInput = document.createElement('div');
@@ -39,7 +36,7 @@ function addInput(event)
 }
 addBtn.addEventListener('click', addInput);
 
-// Function to remove a field from the calculator.
+
 function removeInput(event)
 {
     let parent = document.getElementById('input-container');
